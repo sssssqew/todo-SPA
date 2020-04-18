@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Todo Applicaiton</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Register Modal -->
+    <div class="modal">
+      <div class="modal-content">
+        <div class="header"></div>
+        <form class="signup-form">
+          
+        </form>
+        <button class="close-modal">
+          x</ion-icon>
+        </button>
+      </div>
+      <div class="modal-layer"></div>
+    </div>
+
+    <div class="app"><img class="loading" src="loading.gif" alt="loading"></div>
+
+    <!-- Landing page before log in -->
+    <!-- Main page after log in -->
+    
+
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-storage.js"></script>
+
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyCiL2x1xAfqbh4XDl_45B3rI-cfiMts3Ug",
+        authDomain: "todo-57730.firebaseapp.com",
+        databaseURL: "https://todo-57730.firebaseio.com",
+        projectId: "todo-57730",
+        storageBucket: "todo-57730.appspot.com",
+        messagingSenderId: "411854962938",
+        appId: "1:411854962938:web:3cedd0da7cbfaaccc68943",
+        measurementId: "G-0TGD81FX83"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const auth = firebase.auth();
+      const db = firebase.firestore();
+      const storageRef=firebase.storage().ref();
+    </script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uuid@latest/dist/umd/uuidv4.min.js"></script>
+    <script src="jquery.js"></script>
+    <script src="router.js"></script>
+    <script src="app.js"></script>
+    <script src="loading.js"></script>
+  </body>
+</html>

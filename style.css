@@ -1,0 +1,335 @@
+/* @import "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"; */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #34495e;
+  box-sizing: border-box;
+}
+
+/* Landing page Style */
+.home-container {
+  background: url("landing-page.png") no-repeat center center;
+  /* background-size: cover; */
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+.home-container .btn-wrapper {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  /* border: 1px solid red; */
+}
+.hide-homepage {
+  display: none;
+}
+.btn-wrapper .register-btns {
+  width: 200px;
+  margin-left: 30px;
+  outline: none;
+  background: none;
+  border: 2px solid #f1f1f1;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s linear;
+  font-size: 20px;
+  font-weight: 700;
+}
+.btn-wrapper .register-btns:hover {
+  transform: scale(1.2);
+}
+
+/* Modal Style */
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  text-align: center;
+  display: none;
+}
+.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal .modal-content {
+  position: relative;
+  width: 500px;
+  /* border: 1px solid white; */
+  color: #2c3e50;
+  background: #7f8c8d;
+  border-radius: 10px;
+  padding-bottom: 30px;
+  box-shadow: 0 0 15px #ffffff;
+  /* display: block; */
+}
+.modal .modal-content p {
+  /* border: 2px solid red; */
+  padding: 10px;
+  font-weight: 600;
+}
+.modal .modal-content .sign-complete,
+.update-complete {
+  cursor: pointer;
+  background: #2c3e50;
+  padding: 10px 30px;
+  border-radius: 20px;
+  transition: 0.2s;
+  color: white;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  transition: 0.3s;
+}
+.modal .modal-content .sign-complete:hover,
+.update-complete:hover {
+  font-size: 20px;
+}
+.modal .modal-content .close-modal {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  right: 10px;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 30px;
+  font-weight: 700;
+  color: #2c3e50;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.modal .modal-content .close-modal:hover {
+  transform: scale(1.3);
+}
+
+.modal .modal-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: -1;
+}
+.signup-form input {
+  width: 50%;
+  display: block;
+  margin: 20px auto;
+  padding: 15px 30px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 20px;
+  color: #2c3e50;
+  background: #bdc3c7;
+}
+
+/* Main page Style */
+.container {
+  /* border: 1px solid yellow; */
+  position: relative;
+  width: 100%;
+  max-height: 100vh;
+  margin-top: 30px;
+}
+.settings {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  padding: 10px;
+  /* border: 1px solid red; */
+}
+.hide-container {
+  display: none;
+}
+.upload-profile-pic,
+.logout {
+  width: 150px;
+  margin-left: 20px;
+  outline: none;
+  background: none;
+  border: 2px solid #f1f1f1;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.4s linear;
+  font-size: 15px;
+  font-weight: 700;
+  transition: 0.2s linear;
+}
+.upload-profile-pic:hover,
+.logout:hover {
+  transform: scale(1.2);
+}
+.contents {
+  /* border: 1px solid red; */
+  width: 800px;
+  margin: auto;
+  color: #f1f1f1;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.contents .title-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title-header .profile-image {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  border-radius: 50%;
+  transition: 0.4s;
+  box-shadow: 0 0 5px #fff;
+}
+.profile-image:hover {
+  transform: scale(1.3);
+}
+
+.contents input {
+  width: 50%;
+  display: block;
+  margin: 20px auto;
+  padding: 15px 30px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 20px;
+  color: #2c3e50;
+}
+.todo-form {
+  margin: 20px 0;
+}
+.submit-todo {
+  width: 57%;
+  margin-bottom: 30px;
+  outline: none;
+  background: none;
+  border: 2px solid #f1f1f1;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.4s linear;
+  font-size: 15px;
+  font-weight: 700;
+}
+.submit-todo:hover {
+  color: #cddc39;
+  box-shadow: 0 0 20px #cddc39;
+}
+.todos {
+  width: 60%;
+  height: 350px;
+  margin: 30px auto;
+  text-align: center;
+  overflow: hidden;
+  transition: 0.6s;
+}
+.todos:hover {
+  overflow: auto;
+  overflow-x: hidden;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px grey;
+  border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 10px;
+}
+
+.todos .item-line {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  transition: 0.2s linear;
+  padding: 0 5px;
+  box-sizing: border-box;
+  margin: 10px;
+}
+.todos .item-line:hover {
+  box-shadow: 0 0 5px #cddc39;
+}
+.todos .item-line:hover p {
+  color: #cddc39;
+}
+.item-line ion-icon {
+  margin: 20px;
+  font-size: 20px;
+}
+.item-line .delete-todo {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.item-line .delete-todo:hover {
+  transform: scale(1.3);
+  color: #e74c3c;
+}
+.item-line .check-isCompleted {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.item-line .check-isCompleted:hover {
+  transform: scale(1.3);
+  color: #2ecc71;
+}
+.completed {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+.hide-todo {
+  width: 30%;
+  margin: auto;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.hide-todo:hover {
+  color: #cddc39;
+}
+.hide-todo ion-icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+.todo-left {
+  margin-top: 30px;
+  font-size: 20px;
+}
+.footer {
+  width: 100%;
+  text-align: center;
+  color: white;
+  background: #7f8c8d;
+  position: fixed;
+  bottom: 0;
+}
+.border-shadow {
+  box-shadow: 2px 0 0 0 #2c3e50;
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
